@@ -2,6 +2,9 @@ package SecondWork;
 
 import java.util.Random;
 
+/*  Определить матрицу (двумерный массив) и ее заполнить случайными значениями.
+    Построить вектор В, которой возвращает – номер максимального значения в i-й строке;*/
+
 public class SecondWork2_3 {
 
     public static void main(String[] args) {
@@ -12,15 +15,17 @@ public class SecondWork2_3 {
         Random random = new Random();
         System.out.println("Матрица:");
         for (int i = 0; i < matrix.length; i++) {
-            int min = Integer.MAX_VALUE;
+            int max = Integer.MIN_VALUE;
+            int maxIndex = 0;
             for (int j = 0; j < matrix.length; j++) {
                 int element = -9 + random.nextInt(bound);
-                matrix[j][i] = element;
-                if (element < min) {
-                    min = element;
+                matrix[i][j] = element;
+                if (element > max) {
+                    max = element;
+                    maxIndex = j;
                 }
             }
-            vectorB[i] = min;
+            vectorB[i] = maxIndex;
         }
 
         for (int i = 0; i < matrix.length; i++) {
@@ -33,7 +38,7 @@ public class SecondWork2_3 {
         System.out.println("");
 
         for (int i = 0; i < vectorB.length; i++) {
-            System.out.println("Минимальный элемент столбца с индексом " + i + " - " + vectorB[i]);
+            System.out.println("Индекс максимального элемента строки с индексом " + i + " - " + vectorB[i]);
         }
 
     }

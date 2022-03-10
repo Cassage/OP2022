@@ -2,6 +2,10 @@ package SecondWork;
 
 import java.util.Random;
 
+/*  Дан двумерный массив A, размером (nn) (или квадратная матрица A).
+Найти количество положительных элементов её главной диагонали. Затем умножить
+побочную диагональ на найденное количество */
+
 public class SecondWork2_4 {
     public static void main(String[] args) {
 
