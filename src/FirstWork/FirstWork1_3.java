@@ -1,3 +1,5 @@
+package FirstWork;
+
 public class FirstWork1_3 {
     public static void main(String[] args) {
         if(args.length != 2){
