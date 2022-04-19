@@ -28,6 +28,7 @@ public class ExceptionsPractice {
         } finally {
             System.out.println("FINALE");
         }
+        System.out.println("again");
     }
 
 }
