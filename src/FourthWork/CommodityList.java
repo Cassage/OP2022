@@ -9,15 +9,15 @@ public class CommodityList {
 
     private ArrayList<Commodity> listOfCommodities;
 
-    public CommodityList(ArrayList<Commodity> listOfCommodities){
+    public CommodityList(ArrayList<Commodity> listOfCommodities) {
         this.listOfCommodities = listOfCommodities;
     }
 
-    public void addCommodity(Commodity commodity){
+    public void addCommodity(Commodity commodity) {
         listOfCommodities.add(commodity);
     }
 
-    public ArrayList<Commodity> showCommodities(){
+    public ArrayList<Commodity> showCommodities() {
         return listOfCommodities;
     }
 

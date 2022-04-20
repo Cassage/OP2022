@@ -4,6 +4,14 @@ import ThirdWork.Commodity;
 
 import java.util.ArrayList;
 
+/* Реализация готовой продукции. Создать родительский класс «Товар»
+(идентификатор, код, наименование, цена, описание) и дочерние классы:
+ «Хрупкий товар» (коэффициент хрупкости);
+ «Скоропортящийся товар» (мах время хранения);
+ «Габаритный товар» (высота, ширина, длина).
+Реализовать класс для хранения списка товаров с методом добавления нового
+товара и методом печати списка товаров. */
+
 public class FourthWork4_1 {
 
     public static void main(String[] args) {
@@ -29,7 +37,7 @@ public class FourthWork4_1 {
         int eggRetailPrice = 10;
         String eggDescription = "Хрупкое... и быстропортящееся";
         double eggStorageTime = 72;
-        PerishableCommodity egg = new PerishableCommodity(eggId,eggProductCode,eggName,eggWholesalePrice, eggRetailPrice, eggDescription, eggStorageTime);
+        PerishableCommodity egg = new PerishableCommodity(eggId, eggProductCode, eggName, eggWholesalePrice, eggRetailPrice, eggDescription, eggStorageTime);
 
         commodityList.addCommodity(egg);
 
@@ -47,9 +55,6 @@ public class FourthWork4_1 {
         commodityList.addCommodity(freezer);
 
         System.out.println(commodityList.showCommodities());
-
-
-
 
 
     }

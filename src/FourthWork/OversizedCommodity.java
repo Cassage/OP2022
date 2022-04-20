@@ -8,7 +8,7 @@ public class OversizedCommodity extends Commodity {
     private double width;
     private double length;
 
-    public OversizedCommodity(long id, int productCode, String name, int wholesalePrice, int retailPrice, String description, double height, double length, double width){
+    public OversizedCommodity(long id, int productCode, String name, int wholesalePrice, int retailPrice, String description, double height, double length, double width) {
         super(id, productCode, name, wholesalePrice, retailPrice, description);
         this.height = height;
         this.length = length;
@@ -39,13 +39,12 @@ public class OversizedCommodity extends Commodity {
         this.height = height;
     }
 
-    public String toString(){
-        return  "\n" + super.toString() +
+    public String toString() {
+        return "\n" + super.toString() +
                 "\n Высота (метры) - " + getHeight() +
                 "\n Ширина (метры) - " + getWidth() +
                 "\n Длина (метры) - " + getLength();
     }
-
 
 
 }

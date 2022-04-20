@@ -6,7 +6,7 @@ public class PerishableCommodity extends Commodity {
 
     private double storageTime;
 
-    public PerishableCommodity(long id, int productCode, String name, int wholesalePrice, int retailPrice, String description, double storageTime){
+    public PerishableCommodity(long id, int productCode, String name, int wholesalePrice, int retailPrice, String description, double storageTime) {
         super(id, productCode, name, wholesalePrice, retailPrice, description);
         this.storageTime = storageTime;
     }
@@ -19,8 +19,8 @@ public class PerishableCommodity extends Commodity {
         this.storageTime = storageTime;
     }
 
-    public String toString(){
-        return  "\n" + super.toString() +
+    public String toString() {
+        return "\n" + super.toString() +
                 "\n Максимальное время хранения (часы) - " + getStorageTime();
     }
 
