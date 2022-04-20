@@ -21,7 +21,7 @@ public class PerishableCommodity extends Commodity {
 
     public String toString() {
         return "\n" + super.toString() +
-                "\n Максимальное время хранения (часы) - " + getStorageTime();
+                "\n Максимальное время хранения (часы) - " + storageTime;
     }
 
 }

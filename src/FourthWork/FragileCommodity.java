@@ -21,7 +21,7 @@ public class FragileCommodity extends Commodity {
 
     public String toString() {
         return "\n" + super.toString() +
-                "\n Коэффициент хрупкости - " + getFragilityFactor();
+                "\n Коэффициент хрупкости - " + fragilityFactor;
     }
 
 

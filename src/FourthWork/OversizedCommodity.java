@@ -41,9 +41,9 @@ public class OversizedCommodity extends Commodity {
 
     public String toString() {
         return "\n" + super.toString() +
-                "\n Высота (метры) - " + getHeight() +
-                "\n Ширина (метры) - " + getWidth() +
-                "\n Длина (метры) - " + getLength();
+                "\n Высота (метры) - " + height +
+                "\n Ширина (метры) - " + width +
+                "\n Длина (метры) - " + length;
     }
 
 
