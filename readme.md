@@ -1,3 +1,3 @@
-# Git Test
+# Java Practice Repository
 
-Simple test
+Repository for saving contents of practice
